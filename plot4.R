@@ -12,7 +12,7 @@ source("getData.R")
 electricGather <- gather(electricDataSubset,"Submeter","SubmeterEnergy", Sub_metering_1:Sub_metering_3, na.rm = TRUE, factor_key = TRUE)
 
 #Create Plot 4
-#png(filename = "plot3.png", width = 480, height = 480 )
+png(filename = "plot4.png", width = 480, height = 480 )
 par(mfrow = c(2,2))
 
 #Plot 4.1
@@ -39,7 +39,7 @@ legend("topright", lty = c(1,1,1), col = c("black", "red", "blue"), legend = c("
 #Plot 4.4
 with(electricDataSubset,plot(DateTime,Global_reactive_power,type="l"))
 
-#dev.off()
+dev.off()
 
 #Cleanup
 rm(electricGather)
