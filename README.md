@@ -1,3 +1,11 @@
+## Exploratory Data Analysis Week 1 Course Project
+This is my submission for the project described below. Included files
++ getData.R: This downloads, unzips, and formats the dataset
++ plot[1:4].R: these files create the required plots
++ plot[1:4].png: these files are the final plots
+
+_______________________
+
 ## Introduction
 
 This assignment uses data from
